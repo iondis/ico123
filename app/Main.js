@@ -1,9 +1,11 @@
-import react, { Component } from 'react'
+import React, { Component } from 'react'
 
-export default classs Main extends Component {
+export default class Main extends Component {
   render() {
-    <div>
-      <h1>hello world whats up</h1>
-    </div>
+    return (
+      <div>
+        <h1>hello world whats up</h1>
+      </div>
+    )
   }
 }
