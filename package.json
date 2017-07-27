@@ -1,0 +1,20 @@
+{
+  "name": "mob-ico",
+  "version": "1.0.0",
+  "description": "token sale web app template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ethereum",
+    "react",
+    "webpack",
+    "ico",
+    "token",
+    "erc20",
+    "web3"
+  ],
+  "author": "Sean Francis",
+  "license": "ISC"
+}
