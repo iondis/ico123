@@ -2,7 +2,7 @@ const initial_state = {
   metamask: true,
 }
 
-export default function (state = intial_state, action) {
+export default function (state = initial_state, action) {
   switch(action.type) {
     case 'METAMASK_STATUS':
       return {
