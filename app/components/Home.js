@@ -9,7 +9,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <div style={{display: 'flex', flexDirection: 'column'}}>
+      <div style={{display: 'flex', flexDirection: 'column' }}>
         <Header />
         <Content />
       </div>
