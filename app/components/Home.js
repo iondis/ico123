@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Header from './Header'
 import Content from './Content'
 
-export default class Home extends Component {
+class Home extends Component {
   constructor() {
     super()
+  }
+
+  componentWillMount() {
+
   }
 
   render() {
@@ -16,3 +21,7 @@ export default class Home extends Component {
     )
   }
 }
+
+const mapStoreToProps = store => store.eth
+
+export default connect(Home)(mapStoreToProps)
