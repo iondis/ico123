@@ -7,7 +7,7 @@ export default function (state = initial_state, action) {
     case 'METAMASK_STATUS':
       return {
         ...state,
-        metamask: action.status
+        metamask: action.payload
       }
     default:
       return state
