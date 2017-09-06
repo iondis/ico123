@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import Header from './Header'
 import Content from './Content'
 import { Eth } from '../actions/index'
+import MetaMask from './MetaMask'
 
 class Home extends Component {
   constructor() {
@@ -15,13 +16,16 @@ class Home extends Component {
   }
 
   render() {
-    console.log('this.props', this.props.metamask)
-    return (
-      <div style={{display: 'flex', flexDirection: 'column' }}>
-        <Header />
-        <Content />
-      </div>
-    )
+    if (this.props.metamask) {
+      return (
+        <div style={{display: 'flex', flexDirection: 'column' }}>
+          <Header />
+          <Content />
+        </div>
+      )
+    } else {
+      return <MetaMask />
+    }
   }
 }
 
