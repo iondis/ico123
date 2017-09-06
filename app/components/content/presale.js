@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Logo from './presale/Logo'
+import Video from './presale/Video'
 
 export default class Pesale extends Component {
   constructor() {
@@ -7,7 +9,7 @@ export default class Pesale extends Component {
 
   render() {
     return (
-      <div style={{ display: 'flex', flexDirection: 'row' }}>
+      <div style={{ display: 'flex', flexDirection: 'row', margin: 10 }}>
         <Logo />
         <Video />
       </div>
