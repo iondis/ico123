@@ -1,3 +1,5 @@
+import fs from 'browserify-fs'
+
 export default class Eth {
   constructor() {
     this.web3
@@ -16,7 +18,23 @@ export default class Eth {
     }
   }
 
-  setupContracts(sale, vrd, tgr) {
-    return dispatch =>
+  setupContracts(filename) {
+    return dispatch => {
+      return new Promise((res, rej) => {
+        getContractData(filename)
+        .then(data => {
+          console.log('data', data)
+        }).catch(err => rej(err))
+      })
+    }
+  }
+
+  getContractData(filename) {
+    return new Promise((res, rej) => {
+      fs.readFile(__dirname + './ElasticToken.sol', (err, data) => {
+        if (err) reject(err)
+        res(data)
+      })
+    })
   }
 }
