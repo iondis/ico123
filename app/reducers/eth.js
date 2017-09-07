@@ -1,5 +1,5 @@
 const initial_state = {
-  metamask: true,
+  metamask: false,
 }
 
 export default function (state = initial_state, action) {

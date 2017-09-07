@@ -16,9 +16,10 @@ class Home extends Component {
   }
 
   render() {
+    console.log('this.props.metamask', this.props.metamask)
     if (this.props.metamask) {
       return (
-        <div style={{display: 'flex', flexDirection: 'column' }}>
+        <div style={{display: 'flex', flexDirection: 'row' }}>
           <Header />
           <Content />
         </div>

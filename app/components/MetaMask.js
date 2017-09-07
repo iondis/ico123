@@ -8,7 +8,9 @@ export default class MetaMask extends Component {
   render() {
     return (
       <div>
-        go download metamask, foo
+        <div style={{ width: 500, height: 500, backgroundColor: 'white', borderRadius: 5 }}>
+          <img src='./app/imgs/metamask_logo.png' />
+        </div>
       </div>
     )
   }
