@@ -12,6 +12,14 @@ module.exports = {
         query: {
           presets: ['es2015', 'react', 'stage-2']
         }
+      },
+      {
+        test: /\.sol$/,
+        loaders: ["solidity-loader?export=true"]
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   }
