@@ -27,9 +27,13 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "browserify-fs": "^1.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-modal": "^2.3.2",
     "react-redux": "^5.0.5",
+    "react-youtube": "^7.4.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   }
