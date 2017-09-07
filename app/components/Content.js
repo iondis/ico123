@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Presale from './content/Presale'
 
 export default class Content extends Component {
   constructor() {
@@ -8,8 +7,8 @@ export default class Content extends Component {
 
   render() {
     return (
-      <div style={{ width: '100%', margin: 10 }}>
-        <Presale />
+      <div style={{ width: '100%', margin: 10, display: 'flex', flexDirection: 'column' }}>
+        <h1>lets go</h1>
       </div>
     )
   }
