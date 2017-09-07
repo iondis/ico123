@@ -4,7 +4,7 @@ export default class Eth {
   }
 
   getWeb3Provider() {
-    return (dispatch) => {
+    return dispatch => {
       window.addEventListener('load', () => {
         if (typeof web3 !== 'undefined') {
           dispatch({ type: 'METAMASK_STATUS', payload: true })
@@ -14,5 +14,9 @@ export default class Eth {
         }
       })
     }
+  }
+
+  setupContracts(sale, vrd, tgr) {
+    return dispatch =>
   }
 }
