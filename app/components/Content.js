@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Logo from './content/Logo'
 
 export default class Content extends Component {
   constructor() {
@@ -8,7 +9,7 @@ export default class Content extends Component {
   render() {
     return (
       <div style={{ width: '100%', margin: 10, display: 'flex', flexDirection: 'column' }}>
-        <h1>lets go</h1>
+        <Logo />
       </div>
     )
   }

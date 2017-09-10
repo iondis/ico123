@@ -7,7 +7,7 @@ export default class Main extends Component {
   render() {
     return (
       <Provider store={store}>
-        <div style={{ backgroundColor: '#F5F5F5', width: '100%', height: '100%'}} >
+        <div style={{ backgroundColor: '#F5F5F5', width: '100%', height: '100%', borderRadius: 5}} >
           <Home />
         </div>
       </Provider>
