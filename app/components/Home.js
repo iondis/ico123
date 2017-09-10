@@ -18,7 +18,7 @@ class Home extends Component {
   render() {
     if (this.props.metamask) {
       return (
-        <div style={{display: 'flex', flexDirection: 'row' }}>
+        <div style={homeStyle}>
           <Sidenav />
           <Content />
         </div>
@@ -27,6 +27,14 @@ class Home extends Component {
       return <MetaMask />
     }
   }
+}
+
+const homeStyle = {
+  display: 'flex',
+  flexDirection: 'row',
+  fontFamily: 'roboto',
+  fontWeight: 300,
+  color: '#696969'
 }
 
 const mapStoreToProps = store => store.eth
