@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { VictoryPie } from 'victory'
 
 export default class TokenDist extends Component {
   constructor() {
@@ -8,8 +9,7 @@ export default class TokenDist extends Component {
   render() {
     return (
       <div style={TokenDistStyle}>
-        <h1>Total Supply: </h1>
-          
+        <VictoryPie  />
       </div>
     )
   }
