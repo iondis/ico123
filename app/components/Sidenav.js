@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import User from './sidenav/User'
 
 export default class Sidenav extends Component {
   constructor() {
@@ -8,7 +9,7 @@ export default class Sidenav extends Component {
   render() {
     return (
       <div style={sideNavStyle}>
-      
+        <User />
       </div>
     )
   }
@@ -20,5 +21,7 @@ const sideNavStyle = {
   background: 'white',
   borderRadius: 5,
   boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
-  margin: 30
+  margin: 30,
+  display: 'flex',
+  flexDirection: 'column'
 }
