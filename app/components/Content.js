@@ -9,9 +9,14 @@ export default class Content extends Component {
 
   render() {
     return (
-      <div style={{ width: '100%', margin: 10, display: 'flex', flexDirection: 'column' }}>
-        <Logo />
-        <Video />
+      <div style={{ width: '100%', margin: 10, display: 'flex', flexDirection: 'row' }}>
+        <div style={{ width: '50%', display: 'flex', flexDirection: 'column'}}>
+          <Logo />
+          <Video />
+        </div>
+        <div style={{ width: '50%', display: 'flex', flexDirection: 'column'}}>
+          
+        </div>
       </div>
     )
   }
