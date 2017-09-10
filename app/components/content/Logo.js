@@ -9,6 +9,7 @@ export default class Logo extends Component {
     return (
       <div style={logoStyle}>
         <h1>VERIDIUM (VRD)</h1>
+        <img src='./app/imgs/banners/veridium_banner.png' />
       </div>
     )
   }
