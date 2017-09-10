@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Logo from './content/Logo'
 import Video from './content/Video'
+import TokenDist from './content/TokenDist'
 
 export default class Content extends Component {
   constructor() {
@@ -15,7 +16,7 @@ export default class Content extends Component {
           <Video />
         </div>
         <div style={{ width: '50%', display: 'flex', flexDirection: 'column'}}>
-          
+          <TokenDist />
         </div>
       </div>
     )
