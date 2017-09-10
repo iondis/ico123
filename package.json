@@ -33,11 +33,14 @@
     "img-loader": "^2.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-iframe": "^1.0.7",
     "react-modal": "^2.3.2",
     "react-redux": "^5.0.5",
     "react-youtube": "^7.4.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
-    "solidity-loader": "0.0.7"
+    "solidity-loader": "0.0.7",
+    "victory": "^0.22.1",
+    "vimeo-reactjs": "0.0.2"
   }
 }
