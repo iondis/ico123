@@ -5,9 +5,13 @@ export default class House extends Component {
     super()
   }
 
+  onMouseEnterHandler(e) {
+    console.log('e', e)
+  }
+
   render() {
     return (
-      <div style={houseStyle}>
+      <div style={houseStyle} onMouseEnter={this.onMouseEnterHandler}>
         <img style={{marginLeft: 40, marginRight: 40, marginTop: 20, marginBottom: 20 }} src='./app/imgs/house.png' />
       </div>
     )

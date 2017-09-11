@@ -9,7 +9,7 @@ class Home extends Component {
   constructor() {
     super()
   }
-
+  
   componentWillMount() {
     const { dispatch } = this.props
     dispatch(Eth.getWeb3Provider())
