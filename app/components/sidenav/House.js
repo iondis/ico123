@@ -8,7 +8,7 @@ export default class House extends Component {
   render() {
     return (
       <div style={houseStyle}>
-      
+        <img style={{marginLeft: 40, marginRight: 40, marginTop: 20, marginBottom: 20 }} src='./app/imgs/house.png' />
       </div>
     )
   }
