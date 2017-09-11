@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import User from './sidenav/User'
+import Token from './sidenav/Token'
 
 export default class Sidenav extends Component {
   constructor() {
@@ -10,6 +11,7 @@ export default class Sidenav extends Component {
     return (
       <div style={sideNavStyle}>
         <User />
+        <Token />
       </div>
     )
   }

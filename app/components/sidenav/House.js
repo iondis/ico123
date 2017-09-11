@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
 
-export default class User extends Component {
+export default class House extends Component {
   constructor() {
     super()
   }
 
   render() {
     return (
-      <div style={userStyle}>
-        <img style={{marginLeft: 40, marginRight: 40, marginTop: 20, marginBottom: 20 }} src='./app/imgs/boy.png' />
+      <div style={houseStyle}>
+      
       </div>
     )
   }
 }
 
-const userStyle = {
+const houseStyle = {
   height: 180,
   margin: 20,
   borderRadius: 5,

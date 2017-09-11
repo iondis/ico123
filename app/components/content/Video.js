@@ -8,12 +8,13 @@ export default class Video extends Component {
   render() {
     return (
       <div style={videoStyle}>
-        <iframe src="http://www.youtube.com/embed/xDMP3i36naA"
-              position="absolute"
-              width="100%"
-              height="100%"
-              styles={{height: "25px", borderRadius: 5}}
-              allowFullScreen/>
+        <iframe
+          src="http://www.youtube.com/embed/xDMP3i36naA"
+          position="absolute"
+          width="100%"
+          height="100%"
+          styles={{height: "25px", borderRadius: 5}}
+          allowFullScreen/>
       </div>
     )
   }
