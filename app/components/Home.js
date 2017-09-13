@@ -4,12 +4,14 @@ import Sidenav from './Sidenav'
 import Content from './Content'
 import { Eth } from '../actions/index'
 import MetaMask from './MetaMask'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import ChooseToken from './token/ChooseToken'
 
 class Home extends Component {
   constructor() {
     super()
   }
-  
+
   componentWillMount() {
     const { dispatch } = this.props
     dispatch(Eth.getWeb3Provider())
@@ -18,10 +20,13 @@ class Home extends Component {
   render() {
     if (this.props.metamask) {
       return (
-        <div style={homeStyle}>
-          <Sidenav />
-          <Content />
-        </div>
+        <Router>
+          <div style={homeStyle}>
+            <Sidenav />
+            <Route to="/" component={Content} />
+            <Route to="/token" component={ChooseToken} />
+          </div>
+        </Router>
       )
     } else {
       return <MetaMask />

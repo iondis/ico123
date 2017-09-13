@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import User from './sidenav/User'
 import Token from './sidenav/Token'
 import House from './sidenav/House'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 export default class Sidenav extends Component {
   constructor() {
@@ -12,12 +17,17 @@ export default class Sidenav extends Component {
     return (
       <div style={sideNavStyle}>
         <User />
-        <Token />
+        <Link to="/token">
+          <Token />
+        </Link>
         <House />
       </div>
     )
   }
 }
+
+
+
 
 const sideNavStyle = {
   width: 300,
